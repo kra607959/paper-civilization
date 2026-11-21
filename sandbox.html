@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>纸上文明 · M0 三支笔沙盘</title>
+<link rel="stylesheet" href="src/ui/style.css">
+</head>
+<body class="sand">
+<canvas id="map" aria-label="纸面地图：用三支笔在上面写符、画线"></canvas>
+<div class="hud hud-top">
+  <div class="plate title"><h1>纸上文明 · 三支笔</h1><p>M0 识别样机：墨笔写符，铅笔画路与图纸，朱笔划界</p></div>
+  <div class="plate stats" id="stats"></div>
+  <a class="plate link" href="./">部落（M1）→</a>
+  <a class="plate link" href="lab.html">符号实验室 →</a>
+</div>
+<div class="hud plate log" id="logbox"><h3>参谋</h3><ol id="log"></ol></div>
+<div class="hud pens" id="pens">
+  <button class="plate pen pencil" data-pen="pencil"><span class="ico"></span><span class="nm">铅笔</span><span class="ds">路 · 迁徙 <kbd>1</kbd></span></button>
+  <button class="plate pen ink on" data-pen="ink"><span class="ico"></span><span class="nm">墨笔</span><span class="ds">神符 <kbd>2</kbd></span></button>
+  <button class="plate pen red" data-pen="red"><span class="ico"></span><span class="nm">朱笔</span><span class="ds">封锁 · 禁 · 护 <kbd>3</kbd></span></button>
+  <button class="plate pen" id="bpBtn"><span class="ico" style="background:var(--blue)"></span><span class="nm">图纸</span><span class="ds">窝棚 · 发射台 <kbd>4</kbd></span></button>
+</div>
+<div class="hud plate hint" id="hint"></div>
+<div id="pops"></div>
+<div class="sheet" id="sheet" hidden></div>
+<script type="module" src="src/sandbox/main.js"></script>
+</body>
+</html>

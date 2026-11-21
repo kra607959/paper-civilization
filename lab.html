@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>符号实验室 · 纸上文明 M0</title>
+<link rel="stylesheet" href="src/ui/style.css">
+</head>
+<body class="lab">
+<header class="bar">
+  <h1>符号实验室</h1>
+  <span class="sub">第一代十符 · M0 识别样机</span>
+  <nav class="tabs" id="tabs">
+    <button data-tab="try" class="on">试写</button>
+    <button data-tab="collect">采样</button>
+    <button data-tab="demo">示范三遍</button>
+    <button data-tab="eval">评测</button>
+    <button data-tab="data">数据</button>
+  </nav>
+  <a class="link" href="./">部落（M2）→</a> <a class="link" href="sandbox.html">三支笔沙盘 →</a>
+</header>
+<main class="lab-grid">
+  <aside class="symbols" id="symbols" aria-label="十个符"></aside>
+  <section class="center">
+    <div class="prompt" id="prompt" hidden></div>
+    <div class="padwrap"><canvas id="pad" aria-label="写符的纸"></canvas><div class="padhint" id="padhint">在纸上写一个符，停笔片刻就认；点圈外也行</div></div>
+    <div class="tools">
+      <label>画在 <select id="ctx"></select> 上</label>
+      <button id="undo" title="Backspace">撤一笔</button>
+      <button id="clear" title="Esc">清空</button>
+      <button id="now" class="primary" title="Enter">立即认</button>
+    </div>
+  </section>
+  <aside class="panel">
+    <div id="result"></div>
+    <div id="side"></div>
+  </aside>
+</main>
+<script type="module" src="src/lab/lab.js"></script>
+</body>
+</html>
